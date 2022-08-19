@@ -1,10 +1,42 @@
-# Hello world and Git
 
-## Usage
-Please follow these steps to get your application up and running.
+# Dummy Project
 
-### Requirements
-The following packages are required for this script to work.
-- pandas
-- numpy
-- requests
+A brief description of what this project does and who it's for
+
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+
